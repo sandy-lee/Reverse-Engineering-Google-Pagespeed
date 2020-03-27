@@ -32,4 +32,6 @@ for index in range(0, len(search_terms_df)):
         result = response["organic_results"][i]["link"]
         result_df.loc[i + len(result_df)] = [keyword, position, result]
 
+        print(f'Current index is: {index}')
+
 result_df.to_csv("serp_results.csv")
