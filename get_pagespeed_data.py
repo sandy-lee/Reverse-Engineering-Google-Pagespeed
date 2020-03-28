@@ -23,90 +23,87 @@ pagespeed_results = pd.DataFrame(columns=['url',
                                           'Speed Index',
                                           'Total Blocking Time',
                                           'Network Requests',
-                                          'Total Byte Weight'])
+                                          'Total Byte Weight'],
+                                          index=[0])
 
-for index in range(0, len(urls)):
+# for index in range(0, len(urls)):
+for index in range(0, 5):
     query = f'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={urls.iloc[index]}&key={api_key}'
     request = requests.get(query)
     response = request.json()
     counter += 1
-    print(counter)
-    try:
-        urlid = response['id']
-        split = urlid.split('?')  # This splits the absolute url from the api key parameter
-        urlid = split[0]  # This reassigns urlid to the absolute url
-        # ID = f'URL ~ {urlid}'
-        # ID2 = str(urlid)
-        urlfcp = response['lighthouseResult']['audits']['first-contentful-paint']['numericValue']
-        # FCP = f'First Contentful Paint ~ {str(urlfcp)}'
-        # FCP2 = float(urlfcp)
-        urlfi = response['lighthouseResult']['audits']['interactive']['numericValue']
-        # FI = f'First Interactive ~ {str(urlfi)}'
-        # FI2 = float(urlfi)
-        urlttfb = response['lighthouseResult']['audits']['time-to-first-byte']['numericValue']
-        # TTFB = f'Time To First Byte ~ {str(urlttfb)}'
-        # TTFB2 = float(urlttfb)
-        urldom = response['lighthouseResult']['audits']['dom-size']['numericValue']
-        # DOM  = f'DOM Size ~ {str(urldom)}'
-        # DOM2 = float(urldom)
-        urlboot = response['lighthouseResult']['audits']['bootup-time']['numericValue']
-        # BOOT  = f'Boot Up Time ~ {str(urlboot)}'
-        # BOOT2 = float(urlboot)
-        urlfmp = response['lighthouseResult']['audits']['first-meaningful-paint']['numericValue']
-        # FMP  = f'First Meaningful Paint ~ {str(urlfmp)}'
-        # FMP2 = float(urlfmp)
-        urlsi = response['lighthouseResult']['audits']['speed-index']['numericValue']
-        # SI  = f'Speed Index ~ {str(urlsi)}'
-        # SI2 = float(urlsi)
-        urltbt = response['lighthouseResult']['audits']['total-blocking-time']['numericValue']
-        # TBT  = f'Total Blocking Time ~ {str(urltbt)}'
-        # TBT2 = float(urltbt)
-        urlnr = response['lighthouseResult']['audits']['network-requests']['numericValue']
-        # NR  = f'Network Requests ~ {str(urlnr)}'
-        # NR2 = float(urlnr)
-        urltbw = response['lighthouseResult']['audits']['total-byte-weight']['numericValue']
-        # TBW  = f'Total Byte Weight ~ {str(urltbw)}'
-        # TBW2 = float(urltbw)
+    # print(counter)
+ #   try:
+    url = str(response['id'].split('?'))
 
-    except KeyError:
-        print(f'<KeyError> One or more keys not found {index}.')
+    first_contentful_paint = float(response['lighthouseResult']['audits']['first-contentful-paint']['numericValue'])
 
-    try:
-        row_df = pd.DataFrame(data = [urlid,
-                                      urlfcp,
-                                      urlfi,
-                                      urlttfb,
-                                      urldom,
-                                      urlboot,
-                                      urlfmp,
-                                      urlsi,
-                                      urltbt,
-                                      urlnr,
-                                      urltbw])
-        pagespeed_results = pd.concat(data, ignore_index = True)
-#             file.write(row)
-    except NameError:
-        print(f'<NameError> Failing because of KeyError {index}.')
-#             file.write(f'<KeyError> & <NameError> Failing because of nonexistant Key ~ {line}.' + '\n')
+    first_interactive = float(response['lighthouseResult']['audits']['interactive']['numericValue'])
+
+    time_to_first_byte = float(response['lighthouseResult']['audits']['time-to-first-byte']['numericValue'])
+
+    dom_size = float(response['lighthouseResult']['audits']['dom-size']['numericValue'])
+
+    boot_up_time = float(response['lighthouseResult']['audits']['bootup-time']['numericValue'])
+
+    first_meaningful_paint = float(response['lighthouseResult']['audits']['first-meaningful-paint']['numericValue'])
+
+    speed_index = float(response['lighthouseResult']['audits']['speed-index']['numericValue'])
+
+    total_blocking_tine = float(response['lighthouseResult']['audits']['total-blocking-time']['numericValue'])
+
+    network_requests = float(response['lighthouseResult']['audits']['network-requests']['numericValue'])
+
+    total_byte_weight = float(response['lighthouseResult']['audits']['total-byte-weight']['numericValue'])
+
+
+#     except KeyError:
+#         print(f'<KeyError> One or more keys not found {index}.')
 #
-#         try:
-#             print(ID)
-#             print()
-#             print(counter)
-#             print()
-#             print(FCP)
-#             print(FI)
-#             print(TTFB)
-#             print(DOM)
-#             print(BOOT)
-#             print(FMP)
-#             print(SI)
-#             print(TBT)
-#             print(NR)
-#             print(TBW)
-#             print()
+#     # try:
 #
-#         except NameError:
-#             print(f'<NameError> Failing because of KeyError {line}.')
+    row_df = pd.DataFrame({'url' : url,
+                           'First Contentful Paint' : first_contentful_paint,
+                           'First Interactive' : first_interactive,
+                           'Time to First Byte' : time_to_first_byte,
+                           'DOM Size' : dom_size,
+                           'Boot Up Time' : boot_up_time,
+                           'First Meaningful Paint' : first_meaningful_paint,
+                           'Speed Index' : speed_index,
+                           'Total Blocking Time' : total_blocking_tine,
+                           'Network Requests' : network_requests,
+                           'Total Byte Weight' : total_byte_weight},
+                           index=[0])
+
+    pagespeed_results = pagespeed_results.append(row_df,ignore_index=True)
+
+pagespeed_results.to_csv('pagespeed_results')
 #
-#     file.close()
+#
+#     print(row_df)
+# #             file.write(row)
+# #     except NameError:
+# #         print(f'<NameError> Failing because of KeyError {index}.')
+# #             file.write(f'<KeyError> & <NameError> Failing because of nonexistant Key ~ {line}.' + '\n')
+# #
+# #         try:
+# #             print(ID)
+# #             print()
+# #             print(counter)
+# #             print()
+# #             print(FCP)
+# #             print(FI)
+# #             print(TTFB)
+# #             print(DOM)
+# #             print(BOOT)
+# #             print(FMP)
+# #             print(SI)
+# #             print(TBT)
+# #             print(NR)
+# #             print(TBW)
+# #             print()
+# #
+# #         except NameError:
+# #             print(f'<NameError> Failing because of KeyError {line}.')
+# #
+# #     file.close()
