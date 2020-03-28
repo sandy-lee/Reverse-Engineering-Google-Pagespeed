@@ -3,6 +3,7 @@ import requests
 import pandas as pd
 
 
+
 def get_keys(path):
     with open(path) as f:
         return json.load(f)
@@ -29,7 +30,7 @@ pagespeed_results = pd.DataFrame(columns=['URL',
 # for index in range(0, len(urls)):
 for index in range(0, 5):
     query = f'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={urls.iloc[index]}&key={api_key}'
-    request = requests.get(query)
+    request = requests.get(query,)
     response = request.json()
     counter += 1
     print(counter)
@@ -67,3 +68,10 @@ for index in range(0, 5):
         print(f'<NameError> Failing because of KeyError {line}.')
 pagespeed_results = pagespeed_results.drop(index = 0, axis = 0)
 pagespeed_results.to_csv('pagespeed_results.csv')
+
+"""
+TODO:
+
+[] Use asyncio to make this run quicker
+
+"""
