@@ -221,3 +221,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/python,pydev,macos,windows,pydev,sublimetext,visualstudiocode,jupyternotebooks
+
+# Python dotenv
+.env
