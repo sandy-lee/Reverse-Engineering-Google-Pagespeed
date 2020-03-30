@@ -5,6 +5,7 @@ from concurrent.futures import ProcessPoolExecutor
 import csv
 import json
 import os
+from time import time
 
 import aiohttp
 import dotenv
@@ -61,7 +62,26 @@ async def url_processor(url_q, csv_q, loop):
 
 
 async def csv_writer(url_q, csv_q):
-    pass
+    i, count = 0, len(url_q)
+    last_tenth, last_time, start_time = 0, 0, time()
+
+    with open('page_speed.csv', 'w') as f:
+        writer = csv.DictWriter(f, fieldnames=COLUMNS)
+        writer.writeheader()
+
+        while (not url_q.empty() and not csv_q.empty()):
+            row = await csv_q.get()
+            i += 1
+
+            if not row is None:
+                writer.writerow(d)
+                if (10 * i // count > last_tenth or time() - last_time > 3):
+                    last_tenth = 10 * i // count
+                    last_time = time()
+                    print(f"Completed {i / count:.2%} "
+                            "in {time() - start_time}s.", flush=True)
+
+            csv_q.task_done()
 
 
 async def main():
