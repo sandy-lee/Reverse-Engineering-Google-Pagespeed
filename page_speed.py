@@ -5,6 +5,8 @@ from concurrent.futures import ProcessPoolExecutor
 import csv
 import json
 import os
+from os.path import exists
+import random
 from time import time
 
 import aiohttp
@@ -28,6 +30,8 @@ COLUMNS=['URL',
 
 _pool = ProcessPoolExecutor()
 
+PAGE_SPEED_FILE = 'page_speed.csv'
+SERP_FILE = 'serp_results.csv'
 MAX_CONCURRENT = 69 # number of workers processing urls
 
 
@@ -66,56 +70,70 @@ async def url_processor(url_q, csv_q, loop, session):
             d = await process_url(url, loop, session)
             await csv_q.put(d)
         except Exception as exc:
-            csv_q.put(None)
+            await csv_q.put(None)
             print(f"Exception: {exc}")
 
         url_q.task_done()
 
-async def csv_writer(url_q, csv_q):
-    i, count = 0, url_q.qsize()
-    last_tenth, last_time, start_time = 0, 0, time()
+async def csv_writer(url_q, csv_q, count):
+    i, last_tenth, last_time, start_time = 0, 0, 0, time()
     print('Waiting for data.')
     while(csv_q.empty()):
-        await asyncio.sleep(1)
+        await asyncio.sleep(.1)
 
-    with open('page_speed.csv', 'w') as f:
+    append = exists(PAGE_SPEED_FILE)
+    with open(PAGE_SPEED_FILE, 'a' if append else 'w') as f:
         writer = csv.DictWriter(f, fieldnames=COLUMNS)
-        writer.writeheader()
+        if not append:
+            writer.writeheader()
 
-        while (not url_q.empty() or not csv_q.empty() or time() - last_time < 60):
+        while (i < count):
             row = await csv_q.get()
             i += 1
-            # ~ print(row)
+
             if not row is None:
                 writer.writerow(row)
-                if (10 * i // count > last_tenth or time() - last_time > 3):
+                if (10 * i // count > last_tenth
+                        or time() - last_time > 3):
                     last_tenth = 10 * i // count
                     last_time = time()
-                    print(f"Completed {i / count:.2%} "
-                            f"in {time() - start_time:.2}s.", flush=True)
+                    print(f"Completed {i / count:5.2%} "
+                            f"in {time() - start_time:>8.2f}s.",
+                            flush=True)
 
             csv_q.task_done()
-    print(f"Completed 100% in {time() - start_time}s.", flush=True)
+    print(f"Completed 100% in {time() - start_time:>6.1f}s.", flush=True)
+
+
+def _seen_urls():
+    with open(PAGE_SPEED_FILE) as f:
+        reader = csv.reader(f)
+        next(reader)
+        return set(url for (url, *_) in reader)
 
 
 async def main():
     url_q, csv_q = asyncio.Queue(), asyncio.Queue()
     loop = asyncio.get_running_loop()
     session = aiohttp.ClientSession(connector=aiohttp.TCPConnector(limit=0))
+    seen_urls = _seen_urls() if exists(PAGE_SPEED_FILE) else set()
 
     print("Reading SERP results")
-    with open('serp_results.csv') as f:
+    with open(SERP_FILE) as f:
         reader = csv.reader(f)
         next(reader)
         urls = [url for (*_, url) in reader]
     orig_len = len(urls)
     urls = list(set(urls))
+    random.shuffle(urls)
     for url in urls[:144]: #TODO: unrestrict
+        if url in seen_urls:
+            continue
         url_q.put_nowait(url)
     print(f"Read in {orig_len} entries with {orig_len - len(urls)} "
             "duplicates found.")
 
-    csv_task = loop.create_task(csv_writer(url_q, csv_q))
+    csv_task = loop.create_task(csv_writer(url_q, csv_q, url_q.qsize()))
 
     url_tasks = [loop.create_task(url_processor(url_q, csv_q, loop, session))
                     for _ in range(MAX_CONCURRENT)]
@@ -125,6 +143,7 @@ async def main():
     await csv_task
 
     print("Done!")
+
 
 if __name__ == '__main__':
     asyncio.run(main())
