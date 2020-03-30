@@ -2,10 +2,10 @@
 from concurrent.futures import as_completed, ThreadPoolExecutor
 import csv
 import os
-import sys
 
 import dotenv
 from serpapi.google_search_results import GoogleSearchResults
+
 
 dotenv.load_dotenv()
 GoogleSearchResults.SERP_API_KEY = os.getenv('SERP_API_KEY')
@@ -52,8 +52,8 @@ def main():
                 csvwriter.writerows([(kwd, pos, lnk)
                                         for (pos, lnk) in results])
                 i += 1
-                print(f"\rCompleted {i/len(future_to_kwd):.1%}", end='')
-                sys.stdout.flush()
+                print(f"\rCompleted {i/len(future_to_kwd):.1%}",
+                        end='', flush=True)
             except Exception as exc:
                 print(f'\n\nException: {exc}\n')
     print('\nDone')
