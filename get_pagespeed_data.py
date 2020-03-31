@@ -3,7 +3,6 @@ import requests
 import pandas as pd
 
 
-
 def get_keys(path):
     with open(path) as f:
         return json.load(f)
@@ -27,8 +26,8 @@ pagespeed_results = pd.DataFrame(columns=['URL',
                                           'Total Byte Weight'],
                                           index=[0])
 
-# for index in range(0, len(urls)):
-for index in range(0, 5):
+for index in range(0, len(urls)):
+#for index in range(0, 5):
     query = f'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={urls.iloc[index]}&key={api_key}'
     request = requests.get(query,)
     response = request.json()
