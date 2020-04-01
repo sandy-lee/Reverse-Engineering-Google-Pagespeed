@@ -68,9 +68,3 @@ for index in range(0, len(urls)):
 pagespeed_results = pagespeed_results.drop(index = 0, axis = 0)
 pagespeed_results.to_csv('pagespeed_results.csv')
 
-"""
-TODO:
-
-[] Use asyncio to make this run quicker
-
-"""
