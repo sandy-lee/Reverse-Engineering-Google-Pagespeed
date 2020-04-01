@@ -65,7 +65,7 @@ for index in range(0, 5):
 
         pagespeed_results = pagespeed_results.append(row_df,ignore_index=True)
     except NameError:
-        print(f'<NameError> Failing because of KeyError {line}.')
+        print(f'<NameError> Failing because of KeyError {index}.')
 pagespeed_results = pagespeed_results.drop(index = 0, axis = 0)
 pagespeed_results.to_csv('pagespeed_results.csv')
 
