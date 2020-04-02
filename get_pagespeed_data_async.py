@@ -75,7 +75,7 @@ def main():
     api_key = keys['api_key']
 
     serp_results = pd.read_csv("serp_results.csv")
-    urls = serp_results.result[:10]
+    urls = serp_results.result[:1000]
 
     with open('pagespeed_results.csv', 'w') as f:
         csvwriter = csv.writer(f)
@@ -91,7 +91,7 @@ def main():
                             "NR",
                             "TBW"])
 
-    with FuturesSession() as session:
+    with FuturesSession(max_workers=16) as session:
         futures = [session
                    .get(f'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={url}&key={api_key}')
                    for url in urls]
