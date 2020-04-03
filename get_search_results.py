@@ -35,3 +35,4 @@ for index in range(0, len(search_terms_df)):
         print(f'Current index is: {index}')
 
 result_df.to_csv("serp_results.csv")
+
