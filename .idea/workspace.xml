@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de0ff98f-cbdf-4ea5-974e-a16dd0bf0e8b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="flatiron_school_mod_7_project" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1Zg3mtsZtB20yEtQ0GS1XUQxDe5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunManager" selected="Python.website_classifier">
+    <configuration name="get_pagespeed_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flatiron_school_mod_7_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_pagespeed_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_pagespeed_data_async" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flatiron_school_mod_7_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_pagespeed_data_async.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_pagespeed_data_async" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flatiron_school_mod_7_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_pagespeed_data_async.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_search_results_async_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flatiron_school_mod_7_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_search_results_async_v2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="herp_derp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flatiron_school_mod_7_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/herp_derp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="website_classifier" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/opt/anaconda3/envs/flatiron_school_mod_7_project/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/website_classifier.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.website_classifier" />
+        <item itemvalue="Python.get_search_results_async_v2" />
+        <item itemvalue="Python.get_pagespeed_data" />
+        <item itemvalue="Python.get_pagespeed_data_async" />
+        <item itemvalue="Python.herp_derp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,SHOW_FIELDS" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de0ff98f-cbdf-4ea5-974e-a16dd0bf0e8b" name="Default Changelist" comment="" />
+      <created>1585247071760</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585247071760</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first draft of serp results">
+      <created>1585270157799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585270157799</updated>
+    </task>
+    <task id="LOCAL-00002" summary="final draft of serp results, started pagespeed data script">
+      <created>1585308603252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585308603252</updated>
+    </task>
+    <task id="LOCAL-00003" summary="get pagespeed script is in progress">
+      <created>1585326942671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585326942671</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first draft of serp results" />
+    <MESSAGE value="final draft of serp results, started pagespeed data script" />
+    <MESSAGE value="get pagespeed script is in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="get pagespeed script is in progress" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Notifications" timestamp="1585724153800">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1585724153800" />
+    <state x="184" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586170932095">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="184" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.834@0.23.1440.834" timestamp="1586170932095" />
+    <state x="184" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.835@0.23.1440.835" timestamp="1585255628095" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585754325994">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1585754325994" />
+    <state x="448" y="103" key="#website_classifier" timestamp="1586167952353">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="448" y="103" key="#website_classifier/0.23.1440.834@0.23.1440.834" timestamp="1586167952353" />
+    <state x="365" y="44" key="CommitChangelistDialog2" timestamp="1585326941956">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state x="365" y="44" key="CommitChangelistDialog2/0.23.1440.835@0.23.1440.835" timestamp="1585270249429" />
+    <state x="365" y="44" key="CommitChangelistDialog2/0.23.1440.836@0.23.1440.836" timestamp="1585326941956" />
+    <state x="365" y="44" key="CommitChangelistDialog2/0.23.1440.837@0.23.1440.837" timestamp="1585308602299" />
+    <state x="508" y="201" key="FileChooserDialogImpl" timestamp="1586171545125">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="508" y="201" key="FileChooserDialogImpl/0.23.1440.834@0.23.1440.834" timestamp="1586171545125" />
+    <state width="1419" height="266" key="GridCell.Tab.0.bottom" timestamp="1586170845785">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585761925899" />
+    <state width="1419" height="300" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1585589423168" />
+    <state width="1419" height="228" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1586121807621" />
+    <state width="1419" height="266" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1586170845785" />
+    <state width="709" height="215" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1585270249342" />
+    <state width="981" height="145" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1585342102794" />
+    <state width="981" height="145" key="GridCell.Tab.0.bottom/0.23.1440.837@0.23.1440.837" timestamp="1585341311183" />
+    <state width="1419" height="266" key="GridCell.Tab.0.center" timestamp="1586170845784">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585761925898" />
+    <state width="1419" height="300" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1585589423167" />
+    <state width="1419" height="228" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1586121807620" />
+    <state width="1419" height="266" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1586170845784" />
+    <state width="709" height="215" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1585270249341" />
+    <state width="981" height="145" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1585342102793" />
+    <state width="981" height="145" key="GridCell.Tab.0.center/0.23.1440.837@0.23.1440.837" timestamp="1585341311182" />
+    <state width="1419" height="266" key="GridCell.Tab.0.left" timestamp="1586170845784">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585761925897" />
+    <state width="1419" height="300" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1585589423167" />
+    <state width="1419" height="228" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1586121807619" />
+    <state width="1419" height="266" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1586170845784" />
+    <state width="709" height="215" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1585270249336" />
+    <state width="981" height="145" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1585342102792" />
+    <state width="981" height="145" key="GridCell.Tab.0.left/0.23.1440.837@0.23.1440.837" timestamp="1585341311182" />
+    <state width="1419" height="266" key="GridCell.Tab.0.right" timestamp="1586170845785">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585761925898" />
+    <state width="1419" height="300" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1585589423168" />
+    <state width="1419" height="228" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1586121807621" />
+    <state width="1419" height="266" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1586170845785" />
+    <state width="709" height="215" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1585270249341" />
+    <state width="981" height="145" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1585342102793" />
+    <state width="981" height="145" key="GridCell.Tab.0.right/0.23.1440.837@0.23.1440.837" timestamp="1585341311183" />
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom" timestamp="1586170845787">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="302" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585737158321" />
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1586170845787" />
+    <state width="1419" height="267" key="GridCell.Tab.1.bottom/0.23.1440.836@0.23.1440.836" timestamp="1585324211743" />
+    <state width="1419" height="266" key="GridCell.Tab.1.center" timestamp="1586170845786">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="302" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585737158319" />
+    <state width="1419" height="266" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1586170845786" />
+    <state width="1419" height="267" key="GridCell.Tab.1.center/0.23.1440.836@0.23.1440.836" timestamp="1585324211742" />
+    <state width="1419" height="266" key="GridCell.Tab.1.left" timestamp="1586170845785">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="302" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585737158318" />
+    <state width="1419" height="266" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1586170845785" />
+    <state width="1419" height="267" key="GridCell.Tab.1.left/0.23.1440.836@0.23.1440.836" timestamp="1585324211741" />
+    <state width="1419" height="266" key="GridCell.Tab.1.right" timestamp="1586170845786">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state width="1419" height="302" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585737158320" />
+    <state width="1419" height="266" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1586170845786" />
+    <state width="1419" height="267" key="GridCell.Tab.1.right/0.23.1440.836@0.23.1440.836" timestamp="1585324211742" />
+    <state x="305" y="58" key="SettingsEditor" timestamp="1586170895883">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="305" y="38" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585567904278" />
+    <state x="305" y="58" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1586170895883" />
+    <state x="413" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1585821791342">
+      <screen x="0" y="23" width="1440" height="833" />
+    </state>
+    <state x="413" y="269" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1585723636237" />
+    <state x="413" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.833@0.23.1440.833" timestamp="1585821791342" />
+    <state x="413" y="273" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1585247091425" />
+    <state x="413" y="273" key="com.intellij.ide.util.TipDialog/0.23.1440.836@0.23.1440.836" timestamp="1585247549825" />
+    <state x="525" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585326984194">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state x="525" y="366" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.835@0.23.1440.835" timestamp="1585270127432" />
+    <state x="525" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.836@0.23.1440.836" timestamp="1585326984194" />
+    <state x="525" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.837@0.23.1440.837" timestamp="1585308534271" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1585758672438">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1585758672438" />
+    <state x="450" y="361" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585261309457">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state x="450" y="361" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.836@0.23.1440.836" timestamp="1585261309457" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
