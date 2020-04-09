@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de0ff98f-cbdf-4ea5-974e-a16dd0bf0e8b" name="Default Changelist" comment="" />
+    <list default="true" id="de0ff98f-cbdf-4ea5-974e-a16dd0bf0e8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/notebook_toolkit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flatiron_school_mod_7_project_elt_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/flatiron_school_mod_7_project_elt_notebook.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -315,11 +319,11 @@
     </state>
     <state x="305" y="38" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1585567904278" />
     <state x="305" y="58" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1586170895883" />
-    <state x="413" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1586338912313">
+    <state x="413" y="272" key="com.intellij.ide.util.TipDialog" timestamp="1586432574028">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="413" y="269" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1585723636237" />
-    <state x="413" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.833@0.23.1440.833" timestamp="1586338912313" />
+    <state x="413" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.833@0.23.1440.833" timestamp="1586432574028" />
     <state x="413" y="273" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1585247091425" />
     <state x="413" y="273" key="com.intellij.ide.util.TipDialog/0.23.1440.836@0.23.1440.836" timestamp="1585247549825" />
     <state x="525" y="366" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586186812899">
