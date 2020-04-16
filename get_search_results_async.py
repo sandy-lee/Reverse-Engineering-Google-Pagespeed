@@ -40,7 +40,7 @@ def main():
     future_to_kwd = {pool.submit(top_results, kwd): kwd
                         for kwd in keywords[:5]} #TODO: unrestrict
 
-    with open('herp_derp_results.csv', 'w') as f:
+    with open('results.csv', 'w') as f:
         csvwriter = csv.writer(f)
         csvwriter.writerow(["keyword", "position", "result"])
 
