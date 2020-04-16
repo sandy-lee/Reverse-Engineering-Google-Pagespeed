@@ -55,15 +55,15 @@ I trained a decision tree regressor using these hyperparamters and validated it 
 
 One of the great properties of Linear models, including Random Forest is that they are very transparent in showing which features contributed toward the predictions of the model. As we now have a model that we know is 80% accurate, we can very accurately determine which features matter the most to the Google PageSpeed Insights tool. Breaking this down we see the following:
 
-time_to_interactive	     **56.63%**
-time_to_first_byte	     **20.31%**
-first_meaningful_paint   **6.97%**
-first_contentful_paint   **3.94%**
-total_byte_weight	       **3.39%**
-boot_up_time	           **2.78%**
-network_requests	       **2.07%**
-dom_size	               **1.99%**
-total_blocking_time	     **1.94%**
+* time_to_interactive	     **56.63%**
+* time_to_first_byte	     **20.31%**
+* first_meaningful_paint   **6.97%**
+* first_contentful_paint   **3.94%**
+* total_byte_weight	       **3.39%**
+* boot_up_time	           **2.78%**
+* network_requests	       **2.07%**
+* dom_size	               **1.99%**
+* total_blocking_time	     **1.94%**
 
 The story here is interesting because while we can say it is obvious that **time_to_interactive** is the most important feature, the takeaways here are:
 
