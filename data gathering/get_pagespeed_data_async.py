@@ -9,9 +9,6 @@ def _get_keys(path):
 
 
 def _parse_result(future_obj):
-    # I've noticed pagespeedonline sometimes returning
-    # malformed JSON documents.
-    # probably want a try/except for json.JSONDecodeError
     response = json.loads(future_obj.result().content.decode('utf-8'))
     url = None
     first_contentful_paint = None
@@ -101,18 +98,7 @@ def main():
                    # get_pagespeed_data_async.py:96:80: PEP8 checker error:
                    # E501 line too long (110 > 79 characters)
                    for url in urls]
-        # I think the callbacks are also done in the thread context that was
-        # processing the request.
-        # https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.add_done_callback
-        # If you have multiple threads writing the same file
-        # you're going to have a bad time.
-        # Easily fixed, anyway :)
-        # https://github.com/ross/requests-futures#iterating-over-a-list-of-requests-responses
-        # so long as you don't mind them being unordered...
-        # 
-        # from concurrent.futures import as_completed
-        # for future in as_completed(futures):
-        #     _parse_result(future)
+        
         for future in futures:
             future.add_done_callback(_parse_result)
 
