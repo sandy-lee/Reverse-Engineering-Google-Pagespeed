@@ -1,4 +1,4 @@
-# mod_7_project - Reverse engineeting Google's Pagespeed Insight Tool
+Reverse engineeting Google's Pagespeed Insight Tool
 
 Acccording to a 2015 user experience study by [Erricson Consumer Labs](https://www.ericsson.com/en/press-releases/2016/2/streaming-delays-mentally-taxing-for-smartphone-users-ericsson-mobility-report) waiting for a slow webpage to load on a mobile device can induce as much anxiety as watching a horror film. Google as been promoting the idea of 'making the web faster' through a variety of initiative since 2009. A very good timeline of some of the things they have been doing can be found at [Unbounce.com](https://unbounce.com/landing-pages/2019-is-the-year-of-page-speed/). 
 
